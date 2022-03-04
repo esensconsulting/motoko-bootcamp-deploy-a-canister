@@ -1,7 +1,11 @@
 import { liveDemo } from "../../declarations/liveDemo";
 
 liveDemo.getLastGreetedPerson().then(lastGreeted => {
-  document.getElementById("lastGreeted").innerText = "The last greeted person was " + lastGreeted
+  document.getElementById("lastGreeted").innerText = "The last greeted person was " + lastGreeted;
+});
+
+liveDemo.getGreetCount().then(greetCount => {
+  document.getElementById("greetCount").innerText = greetCount + " shared greetings";
 });
 
 document.querySelector("form").addEventListener("submit", async (e) => {

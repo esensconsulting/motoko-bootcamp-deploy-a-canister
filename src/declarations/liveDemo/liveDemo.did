@@ -1,4 +1,5 @@
 service : {
+  getGreetCount: () -> (int);
   getLastGreetedPerson: () -> (text);
   greet: (text) -> (text);
 }
