@@ -1,5 +1,9 @@
 import { liveDemo } from "../../declarations/liveDemo";
 
+liveDemo.getLastGreetedPerson().then(lastGreeted => {
+  document.getElementById("lastGreeted").innerText = "The last greeted person was " + lastGreeted
+});
+
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const button = e.target.querySelector("button");

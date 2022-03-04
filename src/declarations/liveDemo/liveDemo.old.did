@@ -1,4 +1,3 @@
 service : {
-  getLastGreetedPerson: () -> (text);
   greet: (text) -> (text);
 }
