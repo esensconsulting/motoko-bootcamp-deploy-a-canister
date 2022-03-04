@@ -1,6 +1,6 @@
 actor {
   stable var lastGreeted: Text = "";
-  stable var greetCount: Int = 0;
+  stable var greetCount: Nat = 0;
   
   public func greet(name : Text) : async Text {
     lastGreeted := name;
@@ -12,7 +12,7 @@ actor {
     return lastGreeted;
   };
 
-  public func getGreetCount() : async Int {
+  public func getGreetCount() : async Nat {
     return greetCount;
   };
 };

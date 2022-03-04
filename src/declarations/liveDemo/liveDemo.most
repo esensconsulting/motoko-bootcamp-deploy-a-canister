@@ -1,4 +1,4 @@
 actor {
-  stable var greetCount : Int;
+  stable var greetCount : Nat;
   stable var lastGreeted : Text
 };
